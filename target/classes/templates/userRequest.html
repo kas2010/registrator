@@ -1,0 +1,331 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>let ctx = /*[[@{/}]]*/ '';</script>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="preloader">
+        <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <span id="userRoles" th:text="${userRoles}" style="display: none"></span>
+    <span id="userManagement" th:text="${userManagement}" style="display: none"></span>
+    <nav class="navbar navbar-dark bg-primary row">
+        <a class="navbar-brand" href="#">
+            <img src="icons/house.svg" width="30" height="30"
+                 class="d-inline-block align-top text-white" alt="">
+            Онлайн регистрация пользователей БД</a>
+        <span id="usersPage" class="nav-item for-admin">
+            <a class="nav-link text-white" th:href="@{/users}">Пользователи</a>
+        </span>
+        <span class="nav-item">
+            <a class="nav-link text-right text-white" th:href="@{/userRequest/downloadRegister}">Скачать ведомость</a>
+        </span>
+        <span class="nav-item">
+            <a class="nav-link text-right text-white" th:href="@{/logout}">Выход</a>
+        </span>
+    </nav>
+    <span id="userInfo" th:text="${userInfo}"></span>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="modal" id="btnAddUserRequest">
+        Добавить
+    </button>
+    <button type="button" class="btn btn-primary text-right for-admin" id="btnPrintVedomost">
+        Сформировать заявку
+    </button>
+    <button type="button" class="btn btn-primary text-right for-admin" id="btnPrintPassword">
+        Печать
+    </button>
+    <div class="modal fade" id="modalUserRequest" data-backdrop="static" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-primary" id="btnSaveAndClose">Сохранить и закрыть</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmUserRequestEdit" th:object="${userRequestTo}" th:action="@{/userRequest}"
+                          th:method="post"
+                          onsubmit="return validateForm();">
+                        <input type="hidden" id="id" th:field="*{id}">
+                        <div class="form-group">
+                            <label for="iin">ИИН</label>
+                            <input type="text" id="iin" class="form-control" th:field="*{iin}">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Фамилия</label>
+                            <input type="text" id="firstName" class="form-control" th:field="*{firstName}">
+                        </div>
+                        <div class="form-group">
+                            <label for="middleName">Имя</label>
+                            <input type="text" id="middleName" class="form-control" th:field="*{middleName}">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Отчество</label>
+                            <input type="text" id="lastName" class="form-control" th:field="*{lastName}">
+                        </div>
+                        <div class="form-group" id="managementRecord">
+                            <label for="management">Подразделение</label>
+                            <select id="management" class="form-control" th:field="*{management}">
+                                <option th:each="mg : ${managements}"
+                                        th:value="${mg.id}"
+                                        th:text="${mg.name}">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">Служба</label>
+                            <input type="text" id="department" class="form-control" th:field="*{department}">
+                        </div>
+                        <div class="form-group">
+                            <label for="degree">Звание</label>
+                            <select id="degree" class="form-control" th:field="*{degree}">
+                                <option th:each="degree : ${degrees}"
+                                        th:value="${degree.id}"
+                                        th:text="${degree.name}">State
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="job">Должность</label>
+                            <input type="text" id="job" class="form-control" th:field="*{job}">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Сотовый телефон</label>
+                            <input type="text" id="phone" class="form-control" th:field="*{phone}">
+                        </div>
+                        <div class="form-group">
+                            <label for="dbType">База данных</label>
+                            <select id="dbType" class="form-control" th:field="*{dbType}">
+                                <option th:each="dbType : ${dbTypes}"
+                                        th:value="${dbType.id}"
+                                        th:text="${dbType.name}">State
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="initMatch">Доступ к модулю "Инициативные совпадения"</label>
+                            <input type="checkbox" id="initMatch" class="form-control" th:field="*{initMatch}">
+                        </div>
+                        <div class="form-group">
+                            <label for="emergencyInput">Доступ к модулю "Экстренный ввод"</label>
+                            <input type="checkbox" id="emergencyInput" class="form-control"
+                                   th:field="*{emergencyInput}">
+                        </div>
+                        <div class="form-group">
+                            <label for="interruptedCases">Доступ к модулю "Прерванные дела"</label>
+                            <input type="checkbox" id="interruptedCases" class="form-control"
+                                   th:field="*{interruptedCases}">
+                        </div>
+                        <div class="form-group">
+                            <label for="resetPassword">Обнулить пароль</label>
+                            <input type="checkbox" id="resetPassword" class="form-control"
+                                   th:field="*{resetPassword}">
+                        </div>
+                        <div class="form-group">
+                            <label for="deleteUser">Удалить пользователя</label>
+                            <input type="checkbox" id="deleteUser" class="form-control"
+                                   th:field="*{deleteUser}">
+                        </div>
+                        <div class="form-group">
+                            <label for="login">Логин</label>
+                            <input type="text" id="login" class="form-control" th:field="*{login}">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="text" id="password" class="form-control" th:field="*{password}">
+                        </div>
+                        <div class="form-group" id="stateRecord">
+                            <label for="state">Статус</label>
+                            <select id="state" class="form-control" th:field="*{state}">
+                                <option th:each="state : ${states}"
+                                        th:value="${state.id}"
+                                        th:text="${state.name}">State
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Запрос</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">Удалить документ?</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnYes">Да</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Нет</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModallLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reportModalLabel">Отчет</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnCloseReportModal">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <span id="userRequestCount" style="display: none" th:text="${userRequestList.size()}"></span>
+    <div class="row">
+        <table>
+            <thead th:switch="${userRequestList.size() > 0}? ${userRequestList.get(0).order.name()} : ''">
+            <tr>
+                <td>№</td>
+                <td class="for-admin">#</td>
+                <td>#</td>
+                <td class="for-admin">#</td>
+                <td><a href="#" onclick="$('#order').val('DBTYPE'); $('#frmUserRequestFind').submit();">База данных<img
+                        th:case="'DBTYPE'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('IIN'); $('#frmUserRequestFind').submit();">ИИН<img
+                        th:case="'IIN'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('FIRSTNAME'); $('#frmUserRequestFind').submit();">Фамилия<img
+                        th:case="'FIRSTNAME'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('MIDDLENAME'); $('#frmUserRequestFind').submit();">Имя<img
+                        th:case="'MIDDLENAME'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('LASTNAME'); $('#frmUserRequestFind').submit();">Отчество<img
+                        th:case="'LASTNAME'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('DEPARTMENT'); $('#frmUserRequestFind').submit();">Подразделение<img
+                        th:case="'DEPARTMENT'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('MANAGEMENT'); $('#frmUserRequestFind').submit();">Служба<img
+                        th:case="'MANAGEMENT'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('DEGREE'); $('#frmUserRequestFind').submit();">Звание<img
+                        th:case="'DEGREE'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('JOB'); $('#frmUserRequestFind').submit();">Должность<img
+                        th:case="'JOB'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('PHONE'); $('#frmUserRequestFind').submit();">Сотовый
+                    телефон<img th:case="'PHONE'" src="icons/arrow-up.svg"></a></td>
+                <td><a href="#" onclick="$('#order').val('STATE'); $('#frmUserRequestFind').submit();">Статус<img
+                        th:case="'STATE'" src="icons/arrow-up.svg"></a></td>
+            </tr>
+            <tr class="for-admin">
+                <form id="frmUserRequestFind" th:action="@{/userRequest}" th:method="get"
+                      th:object="${userRequestFind}">
+                    <input type="hidden" th:field="*{order}" id="order">
+                    <td colspan="4">
+                        <button type="submit" class="btn-primary btn-block"><img src="icons/arrow-repeat.svg"></button>
+                    </td>
+                    <td>
+                        <select th:field="*{dbType}" id="dbTypeFind">
+                            <option value=""></option>
+                            <option th:each="e : ${dbTypes}"
+                                    th:value="${e.id}"
+                                    th:text="${e.name}">
+                            </option>
+                        </select>
+                    </td>
+                    <td><input type="text" th:field="*{iin}" id="iinFind"></td>
+                    <td><input type="text" th:field="*{firstName}" id="firstNameFind"></td>
+                    <td><input type="text" th:field="*{middleName}" id="middleNameFind"></td>
+                    <td><input type="text" th:field="*{lastName}" id="lastNameFind"></td>
+                    <td>
+                        <select th:field="*{management}" id="managementFind">
+                            <option value=""></option>
+                            <option th:each="e : ${managements}"
+                                    th:value="${e.id}"
+                                    th:text="${e.name}">
+                            </option>
+                        </select>
+                    </td>
+                    <td><input type="text" th:field="*{department}" id="departmentFind"></td>
+                    <td>
+                        <select th:field="*{degree}" id="degreeFind">
+                            <option value=""></option>
+                            <option th:each="e : ${degrees}"
+                                    th:value="${e.id}"
+                                    th:text="${e.name}">
+                            </option>
+                        </select>
+                    </td>
+                    <td><input type="text" th:field="*{job}" id="jobFind"></td>
+                    <td><input type="text" th:field="*{phone}" id="phoneFind"></td>
+                    <td>
+                        <select th:field="*{state}" id="stateFind">
+                            <option value=""></option>
+                            <option th:each="e : ${states}"
+                                    th:value="${e.id}"
+                                    th:text="${e.name}">
+                            </option>
+                        </select>
+                    </td>
+                </form>
+            </tr>
+            </thead>
+            <tbody th:if="${userRequestList.size() > 0}">
+            <tr th:each="userRequest, itemStat : ${userRequestList}" th:class="${itemStat.odd}? 'odd'"
+                th:style="${userRequest.state.id == 1 ? 'color:red' : (userRequest.state.id == 2 ? 'color:green' :
+                (userRequest.state.id == 3 ? 'color:blue' : (userRequest.state.id == 4 ? 'color:brown' : '')))}">
+                <td th:text="${itemStat.index} + 1"></td>
+                <td class="for-admin"><input type="checkbox" class="form-check checkbox" th:value="|${userRequest.id}|"></td>
+                <td><a href="#" th:onclick="|openUserRequest(${userRequest.id})|"><img src="icons/pencil.svg"></a></td>
+                <td class="for-admin"><a href="#" th:onclick="|deleteUserRequest(${userRequest.id})|"><img
+                        src="icons/x-circle.svg"></a></td>
+                <td th:text="${userRequest.dbType}? ${userRequest.dbType.name}"></td>
+                <td th:text="${userRequest.iin}"></td>
+                <td th:text="${userRequest.firstName}"></td>
+                <td th:text="${userRequest.middleName}"></td>
+                <td th:text="${userRequest.lastName}"></td>
+                <td th:text="${userRequest.management.name}"></td>
+                <td th:text="${userRequest.department}"></td>
+                <td th:text="${userRequest.degree.name}"></td>
+                <td th:text="${userRequest.job}"></td>
+                <td th:text="${userRequest.phone}"></td>
+                <td th:text="${userRequest.state}? ${userRequest.state.name}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="js/userRequest.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</body>
+</html>

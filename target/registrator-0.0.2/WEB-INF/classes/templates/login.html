@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form th:action="@{/login}" th:method="POST">
+            <div class="form-group">
+                <label for="username">Имя пользователя</label>
+                <input type="text" id="username" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" class="form-control" name="password">
+            </div>
+            <input type="submit" class="fadeIn fourth" value="Вход в систему">
+        </form>
+        <div th:if="${param.error}">
+            Неверное имя пользователя или пароль
+        </div>
+        <div th:if="${param.logout}">
+            Вы вышли из системы
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="css/login.css">
+</body>
+</html>

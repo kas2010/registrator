@@ -1,0 +1,69 @@
+table, th, td {
+    border: 1px solid #005cbf;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: Tahoma;
+    padding: 5px;
+}
+
+.odd, .navbar {
+    background-color: #cce5ff;
+}
+
+#navPageNumber {
+    color: #c2c2c2;
+}
+
+#canvas {
+    background-color: #c2c2c2;
+    border: #c2c2c2;
+    display: block;
+    margin: auto;
+}
+
+.image .btn-tertiary {
+    color:#555;
+    padding:0;
+    line-height:30px;
+    width:200px;
+    margin:auto;
+    display:block;
+    border:2px solid #555
+}
+.image .btn-tertiary:hover,.example-2 .btn-tertiary:focus {
+    color:#888;
+    border-color:#888
+}
+.image .input-file {
+    width:.1px;
+    height:.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1
+}
+.image .input-file + .js-labelFile {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding:0 10px;cursor:pointer
+}
+.image .input-file + .js-labelFile .icon:before {
+    content:"\f093"
+}
+.image .input-file + .js-labelFile.has-file .icon:before {
+    content:"\f00c";
+    color:#5AAC7B
+}
+
+#preloader {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 999999;
+    display: block;
+}
+
+input, option, textarea, tr {
+    text-transform: uppercase;
+}
