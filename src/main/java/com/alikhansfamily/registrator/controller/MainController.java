@@ -2,6 +2,7 @@ package com.alikhansfamily.registrator.controller;
 
 import com.alikhansfamily.registrator.model.Management;
 import com.alikhansfamily.registrator.model.User;
+import com.alikhansfamily.registrator.model.UserRequest;
 import com.alikhansfamily.registrator.repository.*;
 import com.alikhansfamily.registrator.service.UserRequestService;
 import com.alikhansfamily.registrator.to.UserRequestTo;
@@ -67,9 +68,6 @@ public class MainController {
 
     @GetMapping("/userRequest")
     public String pageUserRequest(@ModelAttribute UserRequestTo userRequestFind, Model model) {
-        log.info("Add model new UserRequestTo.");
-        model.addAttribute("userRequestTo", new UserRequestTo());
-
         log.info("Add model dictionaries(managements, degree, dbTypes, states).");
         model.addAttribute("managements", managementRepository.findAll());
         model.addAttribute("degrees", degreeRepository.findAll());
@@ -89,6 +87,10 @@ public class MainController {
         model.addAttribute("userInfo", userInfo);
         model.addAttribute("userManagement", management == null ? 0 : management.getId());
         model.addAttribute("userRoles", user.getRoles());
+
+        log.info("Add model new UserRequestTo.");
+        UserRequestTo userRequestTo = new UserRequestTo();
+        model.addAttribute("userRequestTo", userRequestTo);
 
         log.info("Add model UserRequest list.");
         if (management != null) {
@@ -223,5 +225,4 @@ public class MainController {
         log.info("Redirect to page /userRequest");
         return "redirect:/userRequest";
     }
-
 }

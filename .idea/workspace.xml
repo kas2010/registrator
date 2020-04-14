@@ -2,326 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="991a4320-64e7-4ef9-8f26-b5665ee44866" name="Default Changelist" comment="Добавлены файлы src">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/registrator_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/registrator_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a6e98b8f-6c66-4c80-8ee8-b3a69741dac2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a6e98b8f-6c66-4c80-8ee8-b3a69741dac2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_10_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity4_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/registrator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registrator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/RegistratorApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/ServletInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/config/WebSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/controller/MainController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/exception/NotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/DbType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/Degree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/Management.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/State.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/UserRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/repository/DbTypeRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/repository/DegreeRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/repository/ManagementRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/repository/StateRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/repository/UserRequestRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserRequestService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserTo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/doc/spisok.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/doc/vedomost.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/doc/zayavka.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/icons/arrow-repeat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/icons/arrow-up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/icons/house.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/icons/inbox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/icons/pencil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/icons/x-circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/userRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/userRequest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2.war.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/RegistratorApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/ServletInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/config/WebSecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/controller/MainController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/exception/NotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/DbType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/Degree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/Management.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/State.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/UserRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/repository/DbTypeRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/repository/DegreeRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/repository/ManagementRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/repository/StateRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/repository/UserRequestRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserRequestService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserTo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/doc/spisok.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/doc/vedomost.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/doc/zayavka.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/icons/arrow-repeat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/icons/arrow-up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/icons/house.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/icons/inbox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/icons/pencil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/icons/x-circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/userRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/userRequest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/FastInfoset-1.2.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/HikariCP-3.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/SparseBitSet-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/aspectjweaver-1.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/byte-buddy-1.10.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/classmate-1.5.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/commons-codec-1.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/commons-collections4-4.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/commons-compress-1.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/commons-math3-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/curvesapi-1.06.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/dom4j-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/hibernate-core-5.4.10.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/istack-commons-runtime-3.0.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jackson-annotations-2.10.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jackson-core-2.10.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jackson-databind-2.10.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jackson-datatype-jdk8-2.10.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jackson-datatype-jsr310-2.10.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jackson-module-parameter-names-2.10.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jakarta.activation-api-1.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jakarta.persistence-api-2.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jakarta.transaction-api-1.3.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jakarta.xml.bind-api-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jandex-2.1.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/javassist-3.24.0-GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jaxb-runtime-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/log4j-api-2.12.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/poi-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/poi-ooxml-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/poi-ooxml-schemas-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/slf4j-api-1.7.30.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/snakeyaml-1.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-autoconfigure-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-aop-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-data-jpa-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-jdbc-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-json-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-logging-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-security-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-thymeleaf-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-validation-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-boot-starter-web-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-data-commons-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-data-jpa-2.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-jcl-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-security-config-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-security-core-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-security-web-5.2.1.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/stax-ex-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/thymeleaf-extras-java8time-3.0.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/thymeleaf-extras-springsecurity4-3.0.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/txw2-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/lib/xmlbeans-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.alikhansfamily.registrator.RegistratorApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.alikhansfamily.registrator.RegistratorApplicationTests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/alikhansfamily/registrator/RegistratorApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6e98b8f-6c66-4c80-8ee8-b3a69741dac2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6e98b8f-6c66-4c80-8ee8-b3a69741dac2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/model/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/model/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/service/UserRequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/service/UserRequestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/UserRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2.war.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/UserRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/userRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/userRequest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,8 +68,22 @@
         <item name="registrator: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="managements: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="registrator@192.168.111.252" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="registrator: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user_requests: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -391,7 +111,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../memorialapp" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -452,7 +172,10 @@
       <workItem from="1586512869378" duration="2491000" />
       <workItem from="1586516858879" duration="2317000" />
       <workItem from="1586749210508" duration="348000" />
-      <workItem from="1586766382636" duration="1822000" />
+      <workItem from="1586766382636" duration="10792000" />
+      <workItem from="1586833185400" duration="127000" />
+      <workItem from="1586833330708" duration="117000" />
+      <workItem from="1586833586706" duration="15776000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлены файлы src">
       <created>1586767293556</created>
@@ -461,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586767293556</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавлены файлы src2">
+      <created>1586768258426</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586768258426</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +202,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -480,7 +212,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлены файлы src" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены файлы src" />
+    <MESSAGE value="Добавлены файлы src2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены файлы src2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1584503329040">
@@ -491,10 +224,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584597291121" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1586512994171">
+    <state x="671" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586768397948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586512994171" />
+    <state x="671" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586768397948" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1586836660665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586836660665" />
     <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584505081576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -503,62 +240,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="379" width="411" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1584504688273" />
-    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1586767915939">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586857666387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="495" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586767915939" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1586767548696">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586857666387" />
+    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1586768245093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586767548696" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586767957215">
+    <state x="495" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586768245093" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1586773788145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957215" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586767957215">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586773788145" />
+    <state x="837" y="413" width="260" height="214" key="Github.ShareDialog" timestamp="1586768265806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957215" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586767957215">
+    <state x="837" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768265806" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957215" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586767957215">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957215" />
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1586767957216">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957216" />
-    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1586767957216">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957216" />
-    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1586767957215">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957215" />
-    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1586767957216">
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.1.center" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586767957216" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1585388446519">
+    <state width="1877" height="274" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.1.left" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585388446519" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1585388446519">
+    <state width="1877" height="274" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.1.right" timestamp="1586855821903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585388446519" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1585388446519">
+    <state width="1877" height="274" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1586780554781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585388446519" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1585388446519">
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586780554781" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1586780554781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585388446519" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586780554781" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1586780554781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586780554781" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1586780554781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586780554781" />
     <state x="631" y="230" key="RollbackChangesDialog" timestamp="1586767913563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -571,9 +316,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="846" y="436" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586767941491" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1586749444350">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586768937194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586749444350" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586768937194" />
+    <state x="669" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586775493360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586775493360" />
+    <state x="771" y="384" key="git4idea.rebase.GitRebaseDialog" timestamp="1586768527092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="384" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768527092" />
+    <state x="753" y="414" key="git4idea.ui.GitResetDialog" timestamp="1586768515290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="414" key="git4idea.ui.GitResetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768515290" />
+    <state x="753" y="420" key="git4idea.ui.GitStashDialog" timestamp="1586768507330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="420" key="git4idea.ui.GitStashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768507330" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1586839067410">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586839067410" />
   </component>
 </project>

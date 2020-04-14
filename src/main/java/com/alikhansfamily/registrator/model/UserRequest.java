@@ -3,6 +3,7 @@ package com.alikhansfamily.registrator.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -69,6 +70,9 @@ public class UserRequest {
 
     @Column(name = "delete_user")
     private Boolean deleteUser;
+
+    @Column(name = "request_date")
+    private LocalDate requestDate;
 
     @ManyToOne
     @JoinColumn(name = "state_id")
@@ -205,6 +209,14 @@ public class UserRequest {
 
     public void setDeleteUser(Boolean deleteUser) {
         this.deleteUser = deleteUser;
+    }
+
+    public LocalDate getRequestDate() {
+        return requestDate;
+    }
+
+    public void setRequestDate(LocalDate requestDate) {
+        this.requestDate = requestDate;
     }
 
     public DbType getDbType() {

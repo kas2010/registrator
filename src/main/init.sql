@@ -25,6 +25,7 @@ create table user_requests(
     interrupted_cases boolean,          # доступ к модулю "прерванные дела"
     reset_password boolean,             # обнулить пароль
     delete_user boolean,                # удалить пользователя
+    request_date datetime,              # дата подачи заявки
     login varchar(50),                  # логин
     password varchar(50),               # пароль
     state_id bigint,                    # состояние

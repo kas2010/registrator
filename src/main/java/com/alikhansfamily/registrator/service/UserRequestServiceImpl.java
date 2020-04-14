@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -62,6 +63,7 @@ public class UserRequestServiceImpl implements UserRequestService {
                         .and(filterBooleanField("delete_user", userRequestTo.getDeleteUser()))
                         .and(filterStringField("login", userRequestTo.getLogin()))
                         .and(filterStringField("password", userRequestTo.getPassword()))
+                        .and(filterDateField("requestDate", userRequestTo.getMinRequestDate(), userRequestTo.getMaxRequestDate()))
                         .and(filterLongField("state",  userRequestTo.getState() == null ? null: userRequestTo.getState().getId()))
                         .and(filterDateTimeField("createDate", userRequestTo.getMinCreateDate(), userRequestTo.getMaxCreateDate()))
                         .and(filterDateTimeField("changeDate", userRequestTo.getMinChangeDate(), userRequestTo.getMinChangeDate()))
@@ -125,10 +127,8 @@ public class UserRequestServiceImpl implements UserRequestService {
         userRequest.setInterruptedCases(userRequestTo.getInterruptedCases());
         userRequest.setResetPassword(userRequestTo.getResetPassword());
         userRequest.setDeleteUser(userRequestTo.getDeleteUser());
+        userRequest.setRequestDate(userRequestTo.getRequestDate());
         userRequest.setState(userRequestTo.getState());
-        userRequest.setCreateUser(userRequestTo.getCreateUser());
-        userRequest.setChangeUser(userRequestTo.getChangeUser());
-
         repository.save(userRequest);
     }
 
@@ -188,6 +188,8 @@ public class UserRequestServiceImpl implements UserRequestService {
                         cell_index++;
                     }
                 }
+                userRequestTo.setRequestDate(LocalDate.now());
+                save(userRequestTo);
             }
             doc.write(out);
             doc.close();
@@ -243,6 +245,20 @@ public class UserRequestServiceImpl implements UserRequestService {
 
     private Specification<UserRequest> filterStringField(String fieldName, String value) {
         return (root, query, cb) -> value == null || value.trim().equals("") ? null : cb.like(root.get(fieldName), value);
+    }
+
+    private Specification<UserRequest> filterDateField(String fieldName, LocalDate start, LocalDate end) {
+        return (root, query, cb) -> {
+            if (start == null && end == null)
+                return null;
+            if (start == null) {
+                return cb.lessThanOrEqualTo(root.get(fieldName), end.plusDays(1));
+            }
+            if (end == null) {
+                return cb.greaterThanOrEqualTo(root.get(fieldName), start);
+            }
+            return cb.between(root.get(fieldName), start, end.plusDays(1));
+        };
     }
 
     private Specification<UserRequest> filterDateTimeField(String fieldName, LocalDateTime start, LocalDateTime end) {

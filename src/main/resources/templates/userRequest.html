@@ -139,6 +139,10 @@
                                    th:field="*{deleteUser}">
                         </div>
                         <div class="form-group">
+                            <label for="requestDate">Дата подачи заявки</label>
+                            <input type="date" id="requestDate" class="form-control" th:field="*{requestDate}" disabled>
+                        </div>
+                        <div class="form-group">
                             <label for="login">Логин</label>
                             <input type="text" id="login" class="form-control" th:field="*{login}">
                         </div>
@@ -154,6 +158,24 @@
                                         th:text="${state.name}">State
                                 </option>
                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="createDate">Дата ввода</label>
+                            <input type="datetime-local" id="createDate" class="form-control" th:field="*{createDate}"
+                                   disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="createUser">Оператор ввода</label>
+                            <input type="text" id="createUser" class="form-control" th:field="*{createUser}" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="changeDate">Дата корректировки</label>
+                            <input type="datetime-local" id="changeDate" class="form-control" th:field="*{changeDate}"
+                                   disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="changeUser">Оператор корректировки</label>
+                            <input type="text" id="changeUser" class="form-control" th:field="*{changeUser}" disabled>
                         </div>
                     </form>
                 </div>
@@ -220,41 +242,50 @@
         <table>
             <thead th:switch="${userRequestList.size() > 0}? ${userRequestList.get(0).order.name()} : ''">
             <tr>
-                <td>№</td>
-                <td class="for-admin">#</td>
-                <td>#</td>
-                <td class="for-admin">#</td>
-                <td><a href="#" onclick="$('#order').val('DBTYPE'); $('#frmUserRequestFind').submit();">База данных<img
-                        th:case="'DBTYPE'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('IIN'); $('#frmUserRequestFind').submit();">ИИН<img
-                        th:case="'IIN'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('FIRSTNAME'); $('#frmUserRequestFind').submit();">Фамилия<img
-                        th:case="'FIRSTNAME'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('MIDDLENAME'); $('#frmUserRequestFind').submit();">Имя<img
-                        th:case="'MIDDLENAME'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('LASTNAME'); $('#frmUserRequestFind').submit();">Отчество<img
-                        th:case="'LASTNAME'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('DEPARTMENT'); $('#frmUserRequestFind').submit();">Подразделение<img
-                        th:case="'DEPARTMENT'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('MANAGEMENT'); $('#frmUserRequestFind').submit();">Служба<img
-                        th:case="'MANAGEMENT'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('DEGREE'); $('#frmUserRequestFind').submit();">Звание<img
-                        th:case="'DEGREE'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('JOB'); $('#frmUserRequestFind').submit();">Должность<img
-                        th:case="'JOB'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('PHONE'); $('#frmUserRequestFind').submit();">Сотовый
-                    телефон<img th:case="'PHONE'" src="icons/arrow-up.svg"></a></td>
-                <td><a href="#" onclick="$('#order').val('STATE'); $('#frmUserRequestFind').submit();">Статус<img
-                        th:case="'STATE'" src="icons/arrow-up.svg"></a></td>
+                <th>№</th>
+                <th class="for-admin">#</th>
+                <th>#</th>
+                <th class="for-admin">#</th>
+                <th><a href="#" onclick="$('#order').val('DBTYPE'); $('#frmUserRequestFind').submit();">База данных<img
+                        th:case="'DBTYPE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('IIN'); $('#frmUserRequestFind').submit();">ИИН<img
+                        th:case="'IIN'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('FIRSTNAME'); $('#frmUserRequestFind').submit();">Фамилия<img
+                        th:case="'FIRSTNAME'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('MIDDLENAME'); $('#frmUserRequestFind').submit();">Имя<img
+                        th:case="'MIDDLENAME'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('LASTNAME'); $('#frmUserRequestFind').submit();">Отчество<img
+                        th:case="'LASTNAME'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('DEPARTMENT'); $('#frmUserRequestFind').submit();">Подразделение<img
+                        th:case="'DEPARTMENT'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('MANAGEMENT'); $('#frmUserRequestFind').submit();">Служба<img
+                        th:case="'MANAGEMENT'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('DEGREE'); $('#frmUserRequestFind').submit();">Звание<img
+                        th:case="'DEGREE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('JOB'); $('#frmUserRequestFind').submit();">Должность<img
+                        th:case="'JOB'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('PHONE'); $('#frmUserRequestFind').submit();">Сотовый
+                    телефон<img th:case="'PHONE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('STATE'); $('#frmUserRequestFind').submit();">Статус<img
+                        th:case="'STATE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('REQUESTDATE'); $('#frmUserRequestFind').submit();">Дата подачи
+                    заявки<img th:case="'REQUESTDATE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('CREATEDATE'); $('#frmUserRequestFind').submit();">Дата
+                    ввода<img th:case="'CREATEDATE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('CREATEUSER'); $('#frmUserRequestFind').submit();">Оператор
+                    ввода<img th:case="'CREATEUSER'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('CHANGEDATE'); $('#frmUserRequestFind').submit();">Дата
+                    корректировки<img th:case="'CHANGEDATE'" src="icons/arrow-up.svg"></a></th>
+                <th><a href="#" onclick="$('#order').val('CHANGEUSER'); $('#frmUserRequestFind').submit();">Оператор
+                    корректировки<img th:case="'CHANGEUSER'" src="icons/arrow-up.svg"></a></th>
             </tr>
-            <tr class="for-admin">
-                <form id="frmUserRequestFind" th:action="@{/userRequest}" th:method="get"
-                      th:object="${userRequestFind}">
+            <form id="frmUserRequestFind" th:action="@{/userRequest}" th:method="get" th:object="${userRequestFind}">
+                <tr class="for-admin">
                     <input type="hidden" th:field="*{order}" id="order">
-                    <td colspan="4">
-                        <button type="submit" class="btn-primary btn-block"><img src="icons/arrow-repeat.svg"></button>
-                    </td>
-                    <td>
+                    <th colspan="4" rowspan="2">
+                        <button type="submit" class="btn btn-primary btn-block"><img src="icons/arrow-repeat.svg"></button>
+                    </th>
+                    <th>
                         <select th:field="*{dbType}" id="dbTypeFind">
                             <option value=""></option>
                             <option th:each="e : ${dbTypes}"
@@ -262,12 +293,12 @@
                                     th:text="${e.name}">
                             </option>
                         </select>
-                    </td>
-                    <td><input type="text" th:field="*{iin}" id="iinFind"></td>
-                    <td><input type="text" th:field="*{firstName}" id="firstNameFind"></td>
-                    <td><input type="text" th:field="*{middleName}" id="middleNameFind"></td>
-                    <td><input type="text" th:field="*{lastName}" id="lastNameFind"></td>
-                    <td>
+                    </th>
+                    <th><input type="text" th:field="*{iin}" id="iinFind"></th>
+                    <th><input type="text" th:field="*{firstName}" id="firstNameFind"></th>
+                    <th><input type="text" th:field="*{middleName}" id="middleNameFind"></th>
+                    <th><input type="text" th:field="*{lastName}" id="lastNameFind"></th>
+                    <th>
                         <select th:field="*{management}" id="managementFind">
                             <option value=""></option>
                             <option th:each="e : ${managements}"
@@ -275,9 +306,9 @@
                                     th:text="${e.name}">
                             </option>
                         </select>
-                    </td>
-                    <td><input type="text" th:field="*{department}" id="departmentFind"></td>
-                    <td>
+                    </th>
+                    <th><input type="text" th:field="*{department}" id="departmentFind"></th>
+                    <th>
                         <select th:field="*{degree}" id="degreeFind">
                             <option value=""></option>
                             <option th:each="e : ${degrees}"
@@ -285,10 +316,10 @@
                                     th:text="${e.name}">
                             </option>
                         </select>
-                    </td>
-                    <td><input type="text" th:field="*{job}" id="jobFind"></td>
-                    <td><input type="text" th:field="*{phone}" id="phoneFind"></td>
-                    <td>
+                    </th>
+                    <th><input type="text" th:field="*{job}" id="jobFind"></th>
+                    <th><input type="text" th:field="*{phone}" id="phoneFind"></th>
+                    <th>
                         <select th:field="*{state}" id="stateFind">
                             <option value=""></option>
                             <option th:each="e : ${states}"
@@ -296,16 +327,30 @@
                                     th:text="${e.name}">
                             </option>
                         </select>
-                    </td>
-                </form>
-            </tr>
+                    </th>
+                    <th><input type="date" th:field="*{minRequestDate}" id="minRequestDateFind"></th>
+                    <th><input type="datetime-local" th:field="*{minCreateDate}" id="minCreateDateFind"></th>
+                    <th><input type="text" th:field="*{createUser}" id="createUserFind"></th>
+                    <th><input type="datetime-local" th:field="*{minChangeDate}" id="minChangeDateFind"></th>
+                    <th><input type="text" th:field="*{changeUser}" id="changeUserFind"></th>
+                </tr>
+                <tr>
+                    <th colspan="11"></th>
+                    <th><input type="date" th:field="*{maxRequestDate}" id="maxRequestDateFind"></th>
+                    <th><input type="datetime-local" th:field="*{maxCreateDate}" id="maxCreateDateFind"></th>
+                    <th></th>
+                    <th><input type="datetime-local" th:field="*{maxChangeDate}" id="maxChangeDate"></th>
+                    <th></th>
+                </tr>
+            </form>
             </thead>
             <tbody th:if="${userRequestList.size() > 0}">
             <tr th:each="userRequest, itemStat : ${userRequestList}" th:class="${itemStat.odd}? 'odd'"
                 th:style="${userRequest.state.id == 1 ? 'color:red' : (userRequest.state.id == 2 ? 'color:green' :
                 (userRequest.state.id == 3 ? 'color:blue' : (userRequest.state.id == 4 ? 'color:brown' : '')))}">
                 <td th:text="${itemStat.index} + 1"></td>
-                <td class="for-admin"><input type="checkbox" class="form-check checkbox" th:value="|${userRequest.id}|"></td>
+                <td class="for-admin"><input type="checkbox" class="form-check checkbox" th:value="|${userRequest.id}|">
+                </td>
                 <td><a href="#" th:onclick="|openUserRequest(${userRequest.id})|"><img src="icons/pencil.svg"></a></td>
                 <td class="for-admin"><a href="#" th:onclick="|deleteUserRequest(${userRequest.id})|"><img
                         src="icons/x-circle.svg"></a></td>
@@ -320,6 +365,11 @@
                 <td th:text="${userRequest.job}"></td>
                 <td th:text="${userRequest.phone}"></td>
                 <td th:text="${userRequest.state}? ${userRequest.state.name}"></td>
+                <td th:text="${#temporals.format(userRequest.requestDate, 'dd.MM.yyyy')}"></td>
+                <td th:text="${#temporals.format(userRequest.createDate, 'dd.MM.yyyy_HH:mm:ss')}"></td>
+                <td th:text="${userRequest.createUser}? ${userRequest.createUser}"></td>
+                <td th:text="${#temporals.format(userRequest.changeDate, 'dd.MM.yyyy_HH:mm:ss')}"></td>
+                <td th:text="${userRequest.changeUser}? ${userRequest.changeUser}"></td>
             </tr>
             </tbody>
         </table>

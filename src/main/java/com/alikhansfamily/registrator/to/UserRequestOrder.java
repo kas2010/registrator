@@ -11,7 +11,12 @@ public enum UserRequestOrder {
     DEGREE("degree"),
     JOB("job"),
     PHONE("phone"),
-    STATE("state");
+    STATE("state"),
+    REQUESTDATE("requestDate"),
+    CREATEDATE("createDate"),
+    CREATEUSER("createUser"),
+    CHANGEDATE("changeDate"),
+    CHANGEUSER("changeUser");
 
     private String fieldName;
 

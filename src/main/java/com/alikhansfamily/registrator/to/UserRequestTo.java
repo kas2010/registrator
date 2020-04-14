@@ -1,7 +1,9 @@
 package com.alikhansfamily.registrator.to;
 
 import com.alikhansfamily.registrator.model.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class UserRequestTo {
@@ -23,12 +25,24 @@ public class UserRequestTo {
     private Boolean interruptedCases;
     private Boolean resetPassword;
     private Boolean deleteUser;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate requestDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate maxRequestDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate minRequestDate;
     private State state;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime createDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime minCreateDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime maxCreateDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime changeDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime minChangeDate;
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     private LocalDateTime maxChangeDate;
     private String createUser;
     private String changeUser;
@@ -55,6 +69,9 @@ public class UserRequestTo {
         this.interruptedCases = userRequest.getInterruptedCases();
         this.resetPassword = userRequest.getResetPassword();
         this.deleteUser = userRequest.getDeleteUser();
+        this.requestDate = userRequest.getRequestDate();
+        this.maxRequestDate = userRequest.getRequestDate();
+        this.minRequestDate = userRequest.getRequestDate();
         this.state = userRequest.getState();
         this.createDate = userRequest.getCreateDate();
         this.minChangeDate = userRequest.getCreateDate();
@@ -205,6 +222,30 @@ public class UserRequestTo {
 
     public void setDeleteUser(Boolean deleteUser) {
         this.deleteUser = deleteUser;
+    }
+
+    public LocalDate getRequestDate() {
+        return requestDate;
+    }
+
+    public void setRequestDate(LocalDate requestDate) {
+        this.requestDate = requestDate;
+    }
+
+    public LocalDate getMaxRequestDate() {
+        return maxRequestDate;
+    }
+
+    public void setMaxRequestDate(LocalDate maxRequestDate) {
+        this.maxRequestDate = maxRequestDate;
+    }
+
+    public LocalDate getMinRequestDate() {
+        return minRequestDate;
+    }
+
+    public void setMinRequestDate(LocalDate minRequestDate) {
+        this.minRequestDate = minRequestDate;
     }
 
     public String getLogin() {
