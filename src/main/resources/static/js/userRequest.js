@@ -428,3 +428,21 @@ $("#btnPrintPassword").on("click", function (e) {
         }
     });
 });
+
+//Кнопка Выделить все
+$('#btnSelectAll').on('click', function (e) {
+    e.preventDefault();
+    let checkboxes = document.getElementsByClassName('checkbox');
+    for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = true;
+    }
+});
+
+//Кнопка Снять выделенное
+$('#btnDeselectAll').on('click', function (e) {
+    e.preventDefault();
+    let checkboxes = document.getElementsByClassName('checkbox');
+    for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = false;
+    }
+});

@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="991a4320-64e7-4ef9-8f26-b5665ee44866" name="Default Changelist" comment="Добавлены файлы src">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6e98b8f-6c66-4c80-8ee8-b3a69741dac2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6e98b8f-6c66-4c80-8ee8-b3a69741dac2.xml" afterDir="false" />
+    <list default="true" id="991a4320-64e7-4ef9-8f26-b5665ee44866" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/model/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/model/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/service/UserRequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/service/UserRequestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alikhansfamily/registrator/to/UserRequestTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/userRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/userRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/model/UserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/UserRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/model/UserRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/service/UserRequestServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/to/UserRequestTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/com/alikhansfamily/registrator/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/userRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/static/js/userRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/userRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/registrator-0.0.2/WEB-INF/classes/templates/userRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.alikhansfamily.registrator.RegistratorApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.alikhansfamily.registrator.RegistratorApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.alikhansfamily.registrator.RegistratorApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.alikhansfamily.registrator.RegistratorApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -104,6 +89,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -175,7 +161,10 @@
       <workItem from="1586766382636" duration="10792000" />
       <workItem from="1586833185400" duration="127000" />
       <workItem from="1586833330708" duration="117000" />
-      <workItem from="1586833586706" duration="15776000" />
+      <workItem from="1586833586706" duration="16894000" />
+      <workItem from="1586933197086" duration="738000" />
+      <workItem from="1589371975649" duration="34000" />
+      <workItem from="1590397898465" duration="1401000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлены файлы src">
       <created>1586767293556</created>
@@ -191,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586768258426</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлено поля Дата подачи заявки, Дата ввода и корректировки, Операторы ввода корректировки">
+      <created>1586857844063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586857844063</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +209,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлены файлы src" />
     <MESSAGE value="Добавлены файлы src2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены файлы src2" />
+    <MESSAGE value="Добавлено поля Дата подачи заявки, Дата ввода и корректировки, Операторы ввода корректировки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено поля Дата подачи заявки, Дата ввода и корректировки, Операторы ввода корректировки" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1584503329040">
@@ -244,10 +241,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586857666387" />
-    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1586768245093">
+    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1586857812037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="495" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586768245093" />
+    <state x="495" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586857812037" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1586773788145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,38 +253,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="413" width="260" height="214" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768265806" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1590399099282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099282" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1590399099281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099281" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1590399099281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099281" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1590399099281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099281" />
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1590399099282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.1.center" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099282" />
+    <state width="1877" height="274" key="GridCell.Tab.1.center" timestamp="1590399099282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.1.left" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099282" />
+    <state width="1877" height="274" key="GridCell.Tab.1.left" timestamp="1590399099282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
-    <state width="1877" height="274" key="GridCell.Tab.1.right" timestamp="1586855821903">
+    <state width="1877" height="274" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099282" />
+    <state width="1877" height="274" key="GridCell.Tab.1.right" timestamp="1590399099282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586855821903" />
+    <state width="1877" height="274" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099282" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1586780554781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,10 +313,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="846" y="436" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586767941491" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586768937194">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586857849304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586768937194" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586857849304" />
     <state x="669" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586775493360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -336,9 +333,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="753" y="420" key="git4idea.ui.GitStashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586768507330" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1586839067410">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1590399099379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586839067410" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590399099379" />
   </component>
 </project>
